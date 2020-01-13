@@ -1,6 +1,8 @@
-import React from "react";
+import React from 'react';
+import './search.scss';
 
-const SearchField = props => {
+export default (props) => {
+
   return (
     <div className="search">
       <h1 className="search__title">{`Hello, ${props.name}. What to search for you?`}</h1>
@@ -11,5 +13,3 @@ const SearchField = props => {
     </div>
   );
 };
-
-export default SearchField;

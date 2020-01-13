@@ -1,9 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import Search from "./Search.jsx";
 import "./index.scss";
-import "./search.scss";
-import SearchField from "./Search";
 
 const rootElement = document.querySelector("#root");
 
-ReactDOM.render(<SearchField />, rootElement);
+ReactDOM.render(<Search name="Tom" />, rootElement);
