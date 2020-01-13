@@ -6,6 +6,9 @@ const webpack = require("webpack");
 module.exports = (env, argv) => {
     const isProduction = argv.mode === "production";
     const config = {
+        resolve: {
+            extensions: ['.js', '.jsx'],
+        },
         entry: "./src/index.jsx",
         output: {
             path: __dirname + '/review_build',
