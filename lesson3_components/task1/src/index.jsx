@@ -6,4 +6,4 @@ import SearchField from "./Search";
 
 const rootElement = document.querySelector("#root");
 
-ReactDOM.render(<SearchField name="Bob" age={17} />, rootElement);
+ReactDOM.render(<SearchField name="Tom" />, rootElement);
