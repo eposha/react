@@ -4,20 +4,19 @@ class Toggle extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      text: "Off"
+      isToggleOn: false
     };
+    this.handleClick = this.handleClick.bind(this);
   }
-  setSwitch = () => {
-    if (this.state.text === "Off") {
-      this.setState({ text: "On" });
-    } else {
-      this.setState({ text: "Off" });
-    }
-  };
+  handleClick() {
+    this.setState(state => ({
+      isToggleOn: !state.isToggleOn
+    }));
+  }
   render() {
     return (
-      <div onClick={() => this.setSwitch()} className="toggler">
-        {this.state.text}
+      <div onClick={this.handleClick} className="toggler">
+        {this.state.isToggleOn ? "On" : "Off"}
       </div>
     );
   }
