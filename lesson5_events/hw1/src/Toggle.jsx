@@ -6,13 +6,12 @@ class Toggle extends Component {
     this.state = {
       isToggleOn: false
     };
-    this.handleClick = this.handleClick.bind(this);
   }
-  handleClick() {
-    this.setState(state => ({
-      isToggleOn: !state.isToggleOn
-    }));
-  }
+  handleClick = () => {
+    this.setState({
+      isToggleOn: !this.state.isToggleOn
+    });
+  };
   render() {
     return (
       <div onClick={this.handleClick} className="toggler">
