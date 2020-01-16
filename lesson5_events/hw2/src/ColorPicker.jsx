@@ -15,7 +15,7 @@ class ColorPicker extends Component {
 
   hideColorName = () => {
     this.setState({
-      color: value
+      color: " "
     });
   };
 
