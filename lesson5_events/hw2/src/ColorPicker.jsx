@@ -15,7 +15,7 @@ class ColorPicker extends Component {
 
   hideColorName = () => {
     this.setState({
-      color: " "
+      color: ""
     });
   };
 
@@ -26,17 +26,17 @@ class ColorPicker extends Component {
         <div>
           <button
             onMouseOver={() => this.showColor("Coral")}
-            onMouseOut={this.hideColorName}
+            onMouseLeave={() => this.hideColorName()}
             className="picker__button picker__button_coral"
           ></button>
           <button
             onMouseOver={() => this.showColor("Aqua")}
-            onMouseOut={this.hideColorName}
+            onMouseLeave={() => this.hideColorName()}
             className="picker__button picker__button_aqua"
           ></button>
           <button
             onMouseOver={() => this.showColor("Bisque")}
-            onMouseOut={this.hideColorName}
+            onMouseLeave={() => this.hideColorName()}
             className="picker__button picker__button_bisque"
           ></button>
         </div>
