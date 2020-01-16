@@ -5,7 +5,7 @@ class Offline extends Component {
     return (
       <>
         <span>Offline</span>
-        <button className="btn">Reconnect</button>
+        <button>Reconnect</button>
       </>
     );
   }
