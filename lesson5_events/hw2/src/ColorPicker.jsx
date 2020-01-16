@@ -7,19 +7,9 @@ class ColorPicker extends Component {
       color: ""
     };
   }
-  showColorAqua = event => {
+  showColor = name => {
     this.setState({
-      color: "Aqua"
-    });
-  };
-  showColorCoral = event => {
-    this.setState({
-      color: "Coral"
-    });
-  };
-  showColorBisque = event => {
-    this.setState({
-      color: "Bisque"
+      color: name
     });
   };
 
@@ -35,18 +25,18 @@ class ColorPicker extends Component {
         <div className="picker__title">{this.state.color}</div>
         <div>
           <button
-            onMouseOver={this.showColorCoral}
-            onMouseOut={this.hideColorName}
+            onMouseOver={() => this.showColor("Coral")}
+            onMouseOut={() => this.hideColorName}
             className="picker__button picker__button_coral"
           ></button>
           <button
-            onMouseOver={this.showColorAqua}
-            onMouseOut={this.hideColorName}
+            onMouseOver={() => this.showColor("Aqua")}
+            onMouseOut={() => this.hideColorName}
             className="picker__button picker__button_aqua"
           ></button>
           <button
-            onMouseOver={this.showColorBisque}
-            onMouseOut={this.hideColorName}
+            onMouseOver={() => this.showColor("Bisque")}
+            onMouseOut={() => this.hideColorName}
             className="picker__button picker__button_bisque"
           ></button>
         </div>
