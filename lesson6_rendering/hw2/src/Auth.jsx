@@ -8,19 +8,17 @@ class Auth extends Component {
     super(props);
     this.state = {
       isLogin: true,
-      isLogout: false,
       spinner: false
     };
   }
 
   showLogout = () => {
     this.setState({
-      isLogin: false,
-      spinner: true
+      spinner: true,
+      isLogin: false
     });
     setTimeout(() => {
       this.setState({
-        isLogout: true,
         spinner: false
       });
     }, 2000);
@@ -28,17 +26,20 @@ class Auth extends Component {
 
   hideLogout = () => {
     this.setState({
-      isLogout: false,
-      isLogin: true
+      isLogin: true,
+      spinner: false
     });
   };
 
   render() {
     return (
       <>
-        {this.state.isLogin && <Login showLogout={this.showLogout} />}
-        {this.state.isLogout && <Logout hideLogout={this.hideLogout} />}
-        {this.state.spinner && <Spinner size={"25px"} />}
+        {this.state.isLogin ? (
+          <Login showLogout={this.showLogout} />
+        ) : (
+          <Logout hideLogout={this.hideLogout} />
+        )}
+        {this.state.spinner && <Spinner size={25} />}
       </>
     );
   }
