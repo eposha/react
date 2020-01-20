@@ -1,8 +1,7 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import "./index.scss";
-import Transaction from "./Transaction";
+import React from 'react';
+import ReactDOM from 'react-dom';
+import App from './App';
 
-const rootElement = document.querySelector("#root");
+const rootElement = document.querySelector('#root');
 
-ReactDOM.render(<Transaction />, rootElement);
+ReactDOM.render(<App />, rootElement);

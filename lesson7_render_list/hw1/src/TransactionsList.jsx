@@ -1,20 +1,41 @@
-import React from "react";
-import moment from "moment";
+import React, { Component } from "react";
+import Transaction from "./Transaction";
 
-const TransactionsList = ({ transactions }) => {
-  return transactions.map(obj => (
-    <li key={obj.id} className="transaction">
-      <span className="transaction__date">
-        {moment(obj.time).format("DD MMM")}
-      </span>
-      <span className="transaction__time">
-        {moment(obj.time).format("HH mm")}
-      </span>
-      <span className="transaction__assets">{`${obj.from} → ${obj.to}`}</span>
-      <span className="transaction__rate">{obj.rate}</span>
-      <span className="transaction__amount">{obj.amount}</span>
-    </li>
-  ));
-};
+const transactions = [
+  {
+    id: "id-0",
+    from: "USD",
+    to: "EUR",
+    amount: 1200,
+    rate: 0.8,
+    time: "2019-01-10T17:08:35.447Z"
+  },
+  {
+    id: "id-1",
+    from: "USD",
+    to: "UAH",
+    amount: 100000,
+    rate: 25.7,
+    time: "2019-01-10T18:22:35.447Z"
+  },
+  {
+    id: "id-2",
+    from: "EUR",
+    to: "USD",
+    amount: 100,
+    rate: 1.1,
+    time: "2019-01-10T17:01:35.447Z"
+  }
+];
+
+class TransactionsList extends Component {
+  render() {
+    return (
+      <ul className="transactions">
+        <Transaction transactions={transactions} />
+      </ul>
+    );
+  }
+}
 
 export default TransactionsList;

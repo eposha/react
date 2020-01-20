@@ -14,7 +14,6 @@ class UserList extends Component {
   };
 
   render() {
-    console.log(this.props.users);
     let usersList;
     if (this.state.sorting) {
       usersList = this.props.users
@@ -34,7 +33,7 @@ class UserList extends Component {
 
         <ul className="users">
           {usersList.map(user => (
-            <User key={user.name} {...user} />
+            <User key={user.id} {...user} />
           ))}
         </ul>
       </>
