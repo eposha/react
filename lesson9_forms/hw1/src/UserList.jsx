@@ -7,14 +7,14 @@ class UserList extends Component {
     value: ""
   };
 
-  users = this.props.users;
+  users = this.props.users; // do not write same codes
 
   handleChange = event => {
     this.setState({
       value: event.target.value
     });
     this.users = this.props.users.filter(
-      ({ name }) => name === event.target.value
+      ({ name }) => name === this.state.value
     );
   };
 
