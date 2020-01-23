@@ -7,28 +7,29 @@ class UserList extends Component {
     value: ""
   };
 
-  users = this.props.users; // do not write same codes
-
   handleChange = event => {
     this.setState({
       value: event.target.value
     });
-    this.users = this.props.users.filter(
-      ({ name }) => name === this.state.value
-    );
   };
 
   render() {
+    let users = this.props.users
+      .filter(({ name }) =>
+        !this.state.value
+          ? true
+          : name.toLowerCase() === this.state.value.toLowerCase()
+      )
+      .map(({ id, name, age }) => <User key={id} name={name} age={age} />);
+
     return (
       <>
         <Filter
           filterText={this.state.value}
           onChange={this.handleChange}
-          count={this.users.length}
+          count={users.length}
         />
-        <div className="users">
-          <User users={this.users} />
-        </div>
+        <div className="users">{users}</div>
       </>
     );
   }
