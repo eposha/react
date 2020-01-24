@@ -14,13 +14,15 @@ class UserList extends Component {
   };
 
   render() {
-    let users = this.props.users
-      .filter(({ name }) =>
-        !this.state.value
-          ? true
-          : name.toLowerCase() === this.state.value.toLowerCase()
-      )
-      .map(({ id, name, age }) => <User key={id} name={name} age={age} />);
+    let filterUsers = !this.state.value
+      ? this.props.users
+      : this.props.users.filter(
+          ({ name }) => name.toLowerCase() === this.state.value.toLowerCase()
+        );
+
+    let users = filterUsers.map(({ id, name, age }) => (
+      <User key={id} name={name} age={age} />
+    ));
 
     return (
       <>
