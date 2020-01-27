@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import ProductCategoryRow from "./ProductCategoryRow";
 import ProductRow from "./ProductRow";
 
@@ -7,12 +7,13 @@ const ProductTable = ({ filterText, inStockOnly, products }) => {
   let lastCategory = null;
 
   products.forEach(product => {
-    if (product.name.indexOf(filterText) === -1) {
+    if (
+      product.name.indexOf(filterText) === -1 ||
+      (inStockOnly && !product.stocked)
+    ) {
       return;
     }
-    if (inStockOnly && !product.stocked) {
-      return;
-    }
+
     if (product.category !== lastCategory) {
       rows.push(
         <ProductCategoryRow
