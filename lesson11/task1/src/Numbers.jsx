@@ -2,15 +2,15 @@ import React from "react";
 import PropTypes from "prop-types";
 
 class Numbers extends React.PureComponent {
-  shouldComponentUpdate(nextProps) {
-    if (
-      this.props.number === nextProps.number &&
-      this.props.title === nextProps.title
-    ) {
-      return false;
-    }
-    return true;
-  }
+  // shouldComponentUpdate(nextProps) {
+  //   if (
+  //     this.props.number === nextProps.number &&
+  //     this.props.title === nextProps.title
+  //   ) {
+  //     return false;
+  //   }
+  //   return true;
+  // }
   render() {
     return (
       <div className="number">
