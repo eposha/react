@@ -1,6 +1,5 @@
 import React from "react";
 import TasksList from "./TasksList";
-import PropTypes from "prop-types";
 
 const TodoList = () => {
   return (
@@ -10,17 +9,5 @@ const TodoList = () => {
     </>
   );
 };
-
-// Expand.propTypes = {
-//   isOpen: PropTypes.bool,
-//   children: PropTypes.element.isRequired,
-//   title: PropTypes.string,
-//   onClose: PropTypes.func.isRequired
-// };
-
-// Expand.defaultProps = {
-//   isOpen: false,
-//   title: ""
-// };
 
 export default TodoList;
