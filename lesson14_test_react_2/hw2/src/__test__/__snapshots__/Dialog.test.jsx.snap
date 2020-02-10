@@ -19,6 +19,8 @@ exports[`Dialog component Dialog should display children elements 1`] = `
   </div>
   <div
     className="dialog__content"
-  />
+  >
+    text
+  </div>
 </div>
 `;
