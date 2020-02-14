@@ -1,9 +1,7 @@
 import React from "react";
-import { BrowserRouter, Link, Route, Switch } from "react-router-dom";
+import { BrowserRouter, Link, Route } from "react-router-dom";
 import Home from "./Home";
 import Products from "./Products";
-import Navigation from "./Navigation";
-import PageNotFound from "./PageNotFound";
 
 const App = () => {
   return (
@@ -22,7 +20,10 @@ const App = () => {
           <Home />
         </Route>
 
-        <Route path="/products" component={Products} />
+        <Route
+          path="/products"
+          component={({ match }) => <Products match={match} />}
+        />
       </BrowserRouter>
     </div>
   );
