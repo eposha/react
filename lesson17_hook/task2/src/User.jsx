@@ -5,6 +5,8 @@ const User = () => {
   const { userId } = useParams();
   const [userGithub, setUserData] = useState(null);
 
+  console.log(userId);
+
   useEffect(() => {
     fetch(`https://api.github.com/users/${userId}`)
       .then(response => {

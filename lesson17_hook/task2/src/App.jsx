@@ -1,29 +1,31 @@
 import React from "react";
-import { BrowserRouter, Link, Route } from "react-router-dom";
-import Home from "./Home";
-import Users from "./Users";
+import { BrowserRouter, Route, Link, Switch } from "react-router-dom";
+import User from "./User";
 
 const App = () => {
+  const url = "https://api.github.com/users";
   return (
-    <div className="page">
-      <BrowserRouter>
+    <BrowserRouter>
+      <div className="page__content">
+        <h1>Users</h1>
         <ul className="navigation">
           <li className="navigation__item">
-            <Link to="/">Home</Link>
+            <Link to={`/github`}>Github</Link>
           </li>
           <li className="navigation__item">
-            <Link to="/users">Users</Link>
+            <Link to={`/facebook`}>Facebook</Link>
           </li>
         </ul>
-        <Route exact path="/">
-          <Home />
+      </div>
+      <Switch>
+        <Route path={"/:userId"}>
+          <User />
         </Route>
-        <Route
-          path="/users"
-          component={({ match }) => <Users match={match} />}
-        />
-      </BrowserRouter>
-    </div>
+        <Route exact path="/">
+          Select a user please
+        </Route>
+      </Switch>
+    </BrowserRouter>
   );
 };
 
