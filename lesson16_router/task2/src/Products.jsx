@@ -23,8 +23,6 @@ const Products = ({ match }) => {
           path={`${match.url}/:productId`}
           component={({ match }) => <Product match={match} />}
         />
-        {/* <Product  />
-        </Route> */}
       </Switch>
     </div>
   );
