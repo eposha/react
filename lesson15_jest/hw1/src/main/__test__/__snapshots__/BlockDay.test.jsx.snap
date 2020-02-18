@@ -1,0 +1,62 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<BlockDay/> should display BlockDay 1`] = `
+Array [
+  <div
+    className="block-day"
+    key="0"
+  >
+    <BlockHours
+      hourId="2020-02-17"
+    />
+  </div>,
+  <div
+    className="block-day"
+    key="1"
+  >
+    <BlockHours
+      hourId="2020-02-17"
+    />
+  </div>,
+  <div
+    className="block-day"
+    key="2"
+  >
+    <BlockHours
+      hourId="2020-02-17"
+    />
+  </div>,
+  <div
+    className="block-day"
+    key="3"
+  >
+    <BlockHours
+      hourId="2020-02-17"
+    />
+  </div>,
+  <div
+    className="block-day"
+    key="4"
+  >
+    <BlockHours
+      hourId="2020-02-17"
+    />
+  </div>,
+  <div
+    className="block-day"
+    key="5"
+  >
+    <BlockHours
+      hourId="2020-02-17"
+    />
+  </div>,
+  <div
+    className="block-day"
+    key="6"
+  >
+    <BlockHours
+      hourId="2020-02-17"
+    />
+  </div>,
+]
+`;

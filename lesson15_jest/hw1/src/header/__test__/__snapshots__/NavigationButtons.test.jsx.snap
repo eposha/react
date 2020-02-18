@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<NavigationButtons/> Should display NavigationButtons 1`] = `
+<div
+  className="nav-button"
+>
+  <button
+    className="nav-button__prev button-style"
+  >
+    <i
+      className="material-icons nav-button__size"
+    >
+      keyboard_arrow_left
+    </i>
+  </button>
+  <button
+    className="nav-button__next button-style"
+  >
+    <i
+      className="material-icons nav-button__size "
+    >
+      chevron_right
+    </i>
+  </button>
+</div>
+`;

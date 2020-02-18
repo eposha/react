@@ -1,0 +1,225 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<WeekDays/> Should display WeekDays 1`] = `
+<ul
+  className="week"
+>
+  <li
+    className="week__day"
+    key="0"
+  >
+    <span
+      className="day-name "
+    >
+      Mon
+    </span>
+    <span
+      className="day-date"
+    >
+      17
+    </span>
+  </li>
+  <li
+    className="week__day"
+    key="1"
+  >
+    <span
+      className="day-name "
+    >
+      Mon
+    </span>
+    <span
+      className="day-date"
+    >
+      17
+    </span>
+  </li>
+  <li
+    className="week__day"
+    key="2"
+  >
+    <span
+      className="day-name "
+    >
+      Mon
+    </span>
+    <span
+      className="day-date"
+    >
+      17
+    </span>
+  </li>
+  <li
+    className="week__day"
+    key="3"
+  >
+    <span
+      className="day-name "
+    >
+      Mon
+    </span>
+    <span
+      className="day-date"
+    >
+      17
+    </span>
+  </li>
+  <li
+    className="week__day"
+    key="4"
+  >
+    <span
+      className="day-name "
+    >
+      Mon
+    </span>
+    <span
+      className="day-date"
+    >
+      17
+    </span>
+  </li>
+  <li
+    className="week__day"
+    key="5"
+  >
+    <span
+      className="day-name "
+    >
+      Mon
+    </span>
+    <span
+      className="day-date"
+    >
+      17
+    </span>
+  </li>
+  <li
+    className="week__day"
+    key="6"
+  >
+    <span
+      className="day-name "
+    >
+      Mon
+    </span>
+    <span
+      className="day-date"
+    >
+      17
+    </span>
+  </li>
+</ul>
+`;
+
+exports[`<WeekDays/> Should display WeekDays 2`] = `
+<ul
+  className="week"
+>
+  <li
+    className="week__day"
+    key="0"
+  >
+    <span
+      className="day-name "
+    >
+      Mon
+    </span>
+    <span
+      className="day-date"
+    >
+      17
+    </span>
+  </li>
+  <li
+    className="week__day"
+    key="1"
+  >
+    <span
+      className="day-name "
+    >
+      Mon
+    </span>
+    <span
+      className="day-date"
+    >
+      17
+    </span>
+  </li>
+  <li
+    className="week__day"
+    key="2"
+  >
+    <span
+      className="day-name "
+    >
+      Mon
+    </span>
+    <span
+      className="day-date"
+    >
+      17
+    </span>
+  </li>
+  <li
+    className="week__day"
+    key="3"
+  >
+    <span
+      className="day-name "
+    >
+      Mon
+    </span>
+    <span
+      className="day-date"
+    >
+      17
+    </span>
+  </li>
+  <li
+    className="week__day"
+    key="4"
+  >
+    <span
+      className="day-name "
+    >
+      Mon
+    </span>
+    <span
+      className="day-date"
+    >
+      17
+    </span>
+  </li>
+  <li
+    className="week__day"
+    key="5"
+  >
+    <span
+      className="day-name "
+    >
+      Mon
+    </span>
+    <span
+      className="day-date"
+    >
+      17
+    </span>
+  </li>
+  <li
+    className="week__day"
+    key="6"
+  >
+    <span
+      className="day-name "
+    >
+      Mon
+    </span>
+    <span
+      className="day-date"
+    >
+      17
+    </span>
+  </li>
+</ul>
+`;

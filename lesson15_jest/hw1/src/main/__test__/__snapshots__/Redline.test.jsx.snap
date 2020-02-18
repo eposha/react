@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Redline/ > should display Redline 1`] = `
+<div
+  className="red-line"
+  style={
+    Object {
+      "top": "1384px",
+    }
+  }
+/>
+`;

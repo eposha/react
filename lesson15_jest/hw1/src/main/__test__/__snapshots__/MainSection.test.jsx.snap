@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<HolidayLine/ > should display HolidayLine 1`] = `
+<div
+  className="holiday-wrapper"
+>
+  <div
+    className="holiday"
+  >
+    <div
+      className="holiday__day"
+      key="0"
+    />
+    <div
+      className="holiday__day"
+      key="1"
+    />
+    <div
+      className="holiday__day"
+      key="2"
+    />
+    <div
+      className="holiday__day"
+      key="3"
+    />
+    <div
+      className="holiday__day"
+      key="4"
+    />
+    <div
+      className="holiday__day"
+      key="5"
+    />
+    <div
+      className="holiday__day"
+      key="6"
+    />
+  </div>
+</div>
+`;

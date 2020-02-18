@@ -3,7 +3,6 @@ import { shallow } from "enzyme";
 import Dialog from "../Dialog.jsx";
 
 describe("Dialog", () => {
-  const mockCallback = jest.fn();
   it("should be display component Dialog if prop isOpen = true", () => {
     const mockCallback = jest.fn();
     const wrappedComponent = shallow(<Dialog isOpen onClose={mockCallback} />);

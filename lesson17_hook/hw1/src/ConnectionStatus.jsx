@@ -4,18 +4,27 @@ const ConnectionStatus = () => {
   const [connection, setConnection] = useState(true);
 
   useEffect(() => {
-    const statusToggle = () => {
-      setConnection(!connection);
+    // const statusToggle = () => {
+    //   setConnection(!connection);
+    // };
+
+    const handleOnline = () => {
+      setConnection(true);
     };
 
-    window.addEventListener("offline", statusToggle);
-    window.addEventListener("online", statusToggle);
+    const handleOffline = () => {
+      setConnection(false);
+    };
+    console.log("subscribe");
+    window.addEventListener("offline", handleOffline);
+    window.addEventListener("online", handleOnline);
 
     return () => {
-      window.removeEventListener("offline", statusToggle);
-      window.removeEventListener("online", statusToggle);
+      console.log("unsubscribe");
+      window.removeEventListener("offline", handleOffline);
+      window.removeEventListener("online", handleOnline);
     };
-  }, [connection]);
+  }, []);
 
   return (
     <div className={connection ? "status" : "status__offline"}>
